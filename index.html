@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mailing</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+      input {
+        height: 25px;
+      }
+      #submit {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Inscription à notre newsletter</h1>
+    <form id="inscription" action="/" method="POST">
+      <input
+        type="text"
+        name="clientName"
+        id="clientName"
+        placeholder="Votre nom"
+      />
+      <input
+        type="text"
+        name="clientEmail"
+        id="clientEmail"
+        placeholder="Votre adresse e-mail"
+      />
+      <input id ="submit" type="submit" name="submit" />
+    </form>
+    <div id="confirmation" style="font-size: 11pt; visibility: hidden">
+      Vérifiez notre message de bienvenue dans votre boîte email!
+    </div>
+
+    <script>
+    //   const form = document.getElementById("inscription");
+    //   const clientName = document.getElementById("clientName");
+    //   const clientEmail = document.getElementById("clientEmail");
+    //   const confirmation = document.getElementById("confirmation");
+    //   form.addEventListener("click", (e) => {
+    //     e.preventDefault();
+    //      clientName.value = "";
+    //      clientEmail.value = "";
+    //     // confirmation.style.visibility = "visible";
+    //   });
+    </script>
+  </body>
+</html>
